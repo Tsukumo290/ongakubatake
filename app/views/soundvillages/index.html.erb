@@ -1,16 +1,19 @@
-
-
 <div class="header">
-  <div>
+  <div class="logo-image">
     <%= image_tag "soundvillages.png", class: "logo" %>
   </div>
+  <ul class="header-menu">
+    <li>レッスン案内</li>
+    <li><%= link_to "講師メッセージ", soundvillages_index_path(anchor: "money")%></li>
+    <li>教室案内</li>
+    <li>お知らせ</li>
+    <li class="trial"><%=image_tag "mail.png", class: "mail-icon" %>体験レッスン</li>
+    <li class="inquiry">お問い合わせ</li>
+  </ul>
 </div>
-<ul class="menu">
-  <li>レッスン案内</li>
-  <li><%= link_to "講師メッセージ", soundvillages_index_path(anchor: "money")%></li>
-  <li>お知らせ</li>
-  <li>お問い合わせ</li>
-</ul>
+
+
+
 <div class="sukima"></div>
 <div id="money">これが紹介文です</div>
 <div class="sukima"></div>
